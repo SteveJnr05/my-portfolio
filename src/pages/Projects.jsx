@@ -6,7 +6,7 @@ export default function Projects() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/projects")
+    fetch("https://my-portfolio-nkno.onrender.com")
       .then((res) => res.json())
       .then((data) => {
         setProjects(data);
